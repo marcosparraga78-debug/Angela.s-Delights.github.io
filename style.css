@@ -1,0 +1,374 @@
+/* ------------------------- */
+/* ESTILO GENERAL DE LA WEB  */
+/* ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif; /* Usamos la fuente más moderna que elegiste */
+  background-color: #fff0f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ------------------------- */
+/* ENCABEZADO Y NAVEGACIÓN   */
+/* ------------------------- */
+header {
+  background-color: #ffb6c1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  width: 60px; /* Usamos el tamaño del último diseño */
+  height: 60px;
+  border-radius: 50%;
+}
+
+header .logo h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0; /* Limpiamos márgenes */
+}
+
+/* Estilo de "slogan" solo para index.html */
+header .logo .slogan {
+  font-style: italic;
+  font-size: 1em;
+  color: #fcefee;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #6b0f1a;
+  text-decoration: underline; /* Añadimos el underline del diseño anterior */
+}
+
+/* ------------------------- */
+/* PÁGINA: INICIO (index.html) */
+/* ------------------------- */
+.hero {
+  background-color: #ffe4e1;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.hero .btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #e45c50;
+}
+
+.destacados {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.destacados h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+/* ----------------------------------------- */
+/* GALERÍA (Usada en index y productos)      */
+/* ----------------------------------------- */
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.galeria .item {
+  width: 250px;
+  text-align: center;
+  position: relative;
+}
+
+.galeria .item img {
+  width: 100%;
+  height: 200px; /* Altura fija para consistencia */
+  object-fit: cover; /* 'cover' se ve mejor que 'contain' */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria .item img:hover {
+  transform: scale(1.05);
+}
+
+.galeria .item p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ESTILOS DEL MODAL (para productos.html) */
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+dialog {
+  border: none;
+  border-radius: 10px;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 0;
+  overflow: hidden; /* Para que la imagen respete el borde redondeado */
+}
+
+dialog img {
+  max-width: 100%;
+  max-height: 100vh; /* Alto máximo de la ventana */
+  border-radius: 10px;
+  display: block;
+}
+
+/* ----------------------------------------- */
+/* PÁGINA: PEDIDOS (pedidos.html)            */
+/* ----------------------------------------- */
+main.pedidos {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+main.pedidos h2 {
+  text-align: center;
+  color: #e75480;
+  margin-bottom: 10px;
+}
+
+main.pedidos p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.formulario-pedido {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-pedido label {
+  font-weight: bold;
+  color: #555;
+}
+
+.formulario-pedido input,
+.formulario-pedido select,
+.formulario-pedido textarea {
+  padding: 10px;
+  border: 2px solid #ffc0cb;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif; /* Heredar fuente */
+  transition: all 0.3s ease;
+}
+
+.formulario-pedido input:focus,
+.formulario-pedido select:focus,
+.formulario-pedido textarea:focus {
+  border-color: #ff69b4;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 105, 180, 0.4);
+}
+
+.formulario-pedido button.btn {
+  background-color: #ff69b4;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif; /* Heredar fuente */
+}
+
+.formulario-pedido button.btn:hover {
+  background-color: #e75480;
+  transform: scale(1.03);
+}
+
+/* ------------------------- */
+/* PIE DE PÁGINA (Footer)    */
+/* ------------------------- */
+footer {
+  background-color: #ffb6c1;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+/* ================= CONTACTO ================= */
+.contacto {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff0f5;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contacto h2 {
+  color: #c2185b;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  color: #555;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.formulario-contacto label {
+  font-weight: bold;
+  color: #444;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f8bbd0;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto textarea:focus {
+  border-color: #ec407a;
+  outline: none;
+  background-color: #fffafc;
+}
+
+.formulario-contacto .btn {
+  background-color: #ec407a;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto .btn:hover {
+  background-color: #c2185b;
+}
+/* FORMULARIO DE REGISTRO / LOGIN */
+.formulario-login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.formulario-login label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #5c2a2a;
+}
+
+.formulario-login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #e0bcbc;
+  border-radius: 6px;
+}
+
+.formulario-login .btn {
+  width: 100%;
+  background: #ff7ea8;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.formulario-login .btn:hover {
+  background: #e06f98;
+}
+
+.formulario-login p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.formulario-login a {
+  color: #e06f98;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.formulario-login a:hover {
+  text-decoration: underline;
+}

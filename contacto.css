@@ -1,0 +1,183 @@
+/* =============================
+   ESTILOS CONTACTO Y CONFIRMACIÓN
+   ============================= */
+
+body {
+  background: linear-gradient(to bottom right, #ffe4ec, #fff5f8);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Encabezado (igual que las otras páginas) */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  color: #d81b60;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 40px;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  color: #ec407a;
+}
+
+/* FORMULARIO DE CONTACTO */
+.contacto {
+  max-width: 650px;
+  margin: 60px auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contacto h2 {
+  color: #c2185b;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contacto p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contacto label {
+  display: block;
+  margin-bottom: 6px;
+  color: #444;
+  font-weight: 500;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #f8bbd0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.contacto input:focus,
+.contacto textarea:focus {
+  border-color: #ec407a;
+  outline: none;
+}
+
+.contacto button {
+  width: 100%;
+  background-color: #ec407a;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contacto button:hover {
+  background-color: #c2185b;
+}
+
+/* MENSAJE DE CONFIRMACIÓN */
+.confirmacion {
+  max-width: 600px;
+  margin: 80px auto;
+  background: #fff0f5;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 50px 30px;
+  animation: aparecer 0.6s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.confirmacion h2 {
+  color: #c2185b;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.confirmacion p {
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.confirmacion a {
+  display: inline-block;
+  background-color: #ec407a;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.confirmacion a:hover {
+  background-color: #c2185b;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  margin-top: 40px;
+}

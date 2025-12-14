@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos | Angela's Delights</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.jpg" alt="Angela's Delights" />
+      <h1>Angela's Delights</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html" class="activo">Productos</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="login.php">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- GALERÍA DE PRODUCTOS -->
+  <main>
+    <h2>Nuestros Productos</h2>
+    <div class="galeria">
+
+      <div class="item">
+        <img src="images/Creacion1.jpg" alt="Creacion 1" onclick="document.getElementById('modal1').showModal()" style="cursor:pointer;">
+        <p>Creación 1</p>
+        <dialog id="modal1" onclick="this.close()">
+          <img src="images/Creacion1.jpg" alt="Creacion 1" style="width:100%; height:auto; border-radius:10px;">
+        </dialog>
+      </div>
+
+      <div class="item">
+        <img src="images/Creacion2.jpg" alt="Creacion 2" onclick="document.getElementById('modal2').showModal()" style="cursor:pointer;">
+        <p>Creación 2</p>
+        <dialog id="modal2" onclick="this.close()">
+          <img src="images/Creacion2.jpg" alt="Creacion 2" style="width:100%; height:auto; border-radius:10px;">
+        </dialog>
+      </div>
+
+      <div class="item">
+        <img src="images/Creacion3.jpg" alt="Creacion 3" onclick="document.getElementById('modal3').showModal()" style="cursor:pointer;">
+        <p>Creación 3</p>
+        <dialog id="modal3" onclick="this.close()">
+          <img src="images/Creacion3.jpg" alt="Creacion 3" style="width:100%; height:auto; border-radius:10px;">
+        </dialog>
+      </div>
+
+      <div class="item">
+        <img src="images/Creacion4.jpg" alt="Creacion 4" onclick="document.getElementById('modal4').showModal()" style="cursor:pointer;">
+        <p>Creación 4</p>
+        <dialog id="modal4" onclick="this.close()">
+          <img src="images/Creacion4.jpg" alt="Creacion 4" style="width:100%; height:auto; border-radius:10px;">
+        </dialog>
+      </div>
+
+      <div class="item">
+        <img src="images/Creacion5.jpg" alt="Creacion 5" onclick="document.getElementById('modal5').showModal()" style="cursor:pointer;">
+        <p>Creación 5</p>
+        <dialog id="modal5" onclick="this.close()">
+          <img src="images/Creacion5.jpg" alt="Creacion 5" style="width:100%; height:auto; border-radius:10px;">
+        </dialog>
+      </div>
+
+      <div class="item">
+        <img src="images/Creacion6.jpg" alt="Creacion 6" onclick="document.getElementById('modal6').showModal()" style="cursor:pointer;">
+        <p>Creación 6</p>
+        <dialog id="modal6" onclick="this.close()">
+          <img src="images/Creacion6.jpg" alt="Creacion 6" style="width:100%; height:auto; border-radius:10px;">
+        </dialog>
+      </div>
+
+      <div class="item">
+        <img src="images/Creacion7.jpg" alt="Creacion 7" onclick="document.getElementById('modal7').showModal()" style="cursor:pointer;">
+        <p>Creación 7</p>
+        <dialog id="modal7" onclick="this.close()">
+          <img src="images/Creacion7.jpg" alt="Creacion 7" style="width:100%; height:auto; border-radius:10px;">
+        </dialog>
+      </div>
+
+      <div class="item">
+        <img src="images/Creacion8.jpg" alt="Creacion 8" onclick="document.getElementById('modal8').showModal()" style="cursor:pointer;">
+        <p>Creación 8</p>
+        <dialog id="modal8" onclick="this.close()">
+          <img src="images/Creacion8.jpg" alt="Creacion 8" style="width:100%; height:auto; border-radius:10px;">
+        </dialog>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>&copy; 2025 Angela's Delights | Babahoyo, Ecuador</p>
+  </footer>
+</body>
+</html>
+
